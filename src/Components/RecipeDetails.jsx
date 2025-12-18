@@ -7,7 +7,7 @@ function RecipeDetails(){
  useEffect(() => {
   const fetchDetails = async () => {
     try {
-        const url = `/.netlify/functions/getRecipeDetails?id=${id}`;
+        const url = `/api/getRecipeDetails?id=${id}`;
         const response = await fetch(url);
 
 

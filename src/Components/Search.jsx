@@ -15,7 +15,8 @@ function Search() {
   setError("");
 
   try {
-   const url = `/.netlify/functions/getRecipes?query=${input}`;
+   const url = `/api/getRecipes?query=${encodeURIComponent(input)}`;
+;
 
 
     const response = await fetch(url);
