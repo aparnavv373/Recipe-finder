@@ -1,3 +1,4 @@
+
 export default async function handler(req, res) {
   const { query } = req.query;
   const API_KEY = process.env.SPOONACULAR_API_KEY;
