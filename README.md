@@ -1,6 +1,6 @@
 # 🍽️ AI Recipe Finder
 
-An AI-powered full-stack web application that helps users discover recipes using AI. Users can securely create an account, generate detailed recipes, save favorites, track their cooking history, and enjoy a responsive experience across devices.
+An AI-powered full-stack recipe application built with React, FastAPI, PostgreSQL, SQLAlchemy, and Groq Llama AI. Users can create accounts, generate recipes, save favorites, and track cooking history through a responsive web interface.
 
 ## 🌐 Live Demo
 
@@ -31,7 +31,7 @@ An AI-powered full-stack web application that helps users discover recipes using
 
 * User Registration & Login
 * JWT Authentication
-* Protected Routes
+* Protected API Endpoints
 * Secure Logout
 
 ### 🤖 AI Recipe Generation
@@ -203,11 +203,12 @@ Some of the major API endpoints include:
 ---
 ## 🤖 How It Works
 
-1. User searches for a recipe.
-2. The frontend sends a request to the FastAPI backend.
-3. The backend communicates with the Groq Llama API.
-4. The AI generates a structured recipe.
-5. The recipe is stored in the database and displayed to the user.
+1. The user submits a recipe request through the React frontend.
+2. The frontend sends the request to the FastAPI backend through a REST API.
+3. The backend validates the request and communicates with the Groq Llama API.
+4. The AI-generated recipe is processed by the backend.
+5. Recipe data is stored in PostgreSQL using SQLAlchemy.
+6. The backend returns the recipe data to the React frontend for display.
 
 # 🔮 Future Enhancements
 
@@ -217,27 +218,15 @@ Some of the major API endpoints include:
 - Refresh Tokens
 - Generate Recipes from Available Ingredients
 
-# 📚 Key Learning Outcomes
-
-This project helped me gain hands-on experience with:
-
-* Building full-stack applications using React and FastAPI
-* Designing REST APIs
-* JWT Authentication & Protected Routes
-* SQLAlchemy ORM
-* PostgreSQL & Cloud Database Migration
-* AI API Integration
-* Responsive UI Development
-* Deploying applications using Netlify, Render, and Neon
-* Debugging production deployment issues
 
 
 
 ## ⭐ Highlights
 
-- Full-stack application built from scratch
-- AI-powered recipe generation using Groq Llama
-- JWT Authentication
-- PostgreSQL database integration
-- Responsive React UI
+- Full-stack application architecture using React and FastAPI
+- REST API development with FastAPI
+- JWT authentication and protected API endpoints
+- SQLAlchemy ORM and PostgreSQL database integration
+- Groq Llama API integration
+- Responsive UI development with React and Tailwind CSS
 - Deployed on Netlify, Render, and Neon
